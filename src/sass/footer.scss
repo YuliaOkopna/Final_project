@@ -1,0 +1,13 @@
+$primary-color: #ffed4c;
+$secondary-color: #000;
+
+footer {
+  background-color: $secondary-color;
+  p {
+    text-align: center;
+    color: $primary-color;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+}

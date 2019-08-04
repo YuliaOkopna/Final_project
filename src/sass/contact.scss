@@ -1,0 +1,127 @@
+$primary-color: #ffed4c;
+$secondary-color: #000;
+$primary-font: 16px;
+
+#contact {
+  background-color: #ffffff;
+  padding-top: 5px;
+}
+
+.contact_main-block {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+.contact_info {
+  padding-bottom: 50px;
+  width: 40%;
+  h2 {
+    font-size: 30px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .contact_border {
+    border: 1px $secondary-color solid;
+    width: 8%;
+    margin-bottom: 50px;
+  }
+}
+
+.office_info {
+  p {
+    font-size: $primary-font;
+    line-height: 2;
+    .font_weight {
+      font-weight: bold;
+    }
+  }
+}
+
+.gmap {
+  width: 60%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  position: relative;
+  height: 250px;
+}
+.gmap_canvas iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.contact_form {
+  width: 43%;
+  .info_form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    .info_form-input {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      input {
+        width: 47%;
+        border: 1px $secondary-color solid;
+        padding: 7px 4px;
+        margin-bottom: 25px;
+      }
+    }
+    textarea {
+      border: 1px $secondary-color solid;
+    }
+    .contact_form-submit {
+      margin-top: 25px;
+      width: 50%;
+      color: $primary-color;
+      background-color: $secondary-color;
+      border: 1px $secondary-color solid;
+      border-radius: 2px;
+      padding: 6px;
+      font-size: $primary-font;
+      &:hover {
+        color: $secondary-color;
+        background-color: $primary-color;
+        cursor: pointer;
+        transition: 0.7;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:768px) {
+  .contact_info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .gmap {
+    width: 100%;
+    padding-bottom: 60px;
+  }
+
+  .contact_info {
+    .contact_border {
+      width: 40%;
+      margin: 0 auto;
+    }
+  }
+  .contact_form {
+    width: 80%;
+    margin: 0 auto;
+    .contact_form-submit {
+      margin: 0 auto;
+    }
+  }
+}

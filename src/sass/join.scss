@@ -1,0 +1,106 @@
+$primary-color: #ffed4c;
+$secondary-color: #000;
+$primary-font: 16px;
+
+.join {
+  background-color: $primary-color;
+  padding-top: 50px;
+  padding-bottom: 90px;
+  text-align: center;
+  color: $secondary-color;
+  h2 {
+    font-size: 27px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  p {
+    font-size: $primary-font;
+  }
+}
+
+.join_content {
+  img {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 20px;
+  }
+  form {
+    padding-top: 20px;
+    .join_form-submit {
+      border: 1px $secondary-color solid;
+      color: $primary-color;
+      background-color: $secondary-color;
+      border-radius: 2px;
+      font-size: $primary-font;
+      padding: 4px 20px;
+      text-align: center;
+      display: none;
+      &:hover {
+        color: $secondary-color;
+        background-color: $primary-color;
+        cursor: pointer;
+        transition: 0.7;
+      }
+    }
+    .join_form-email {
+      padding: 5.8px 10px;
+      width: 25%;
+      border-radius: 2px;
+      border: 1px $secondary-color solid;
+    }
+  }
+  .join_icon {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    width: 25%;
+    margin: 0 auto;
+    a {
+      text-decoration: none;
+      color: $secondary-color;
+      font-size: 19px;
+      i {
+        border: 1px $secondary-color solid;
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+        &:hover {
+          cursor: pointer;
+          background-color: #ffffff;
+          transition: 0.8;
+        }
+      }
+    }
+  }
+}
+
+form:valid .join_form-submit {
+  display: inline-block;
+}
+
+@media screen and(max-width:768px) {
+  .join_content {
+    form {
+      .join_form-submit {
+        display: block;
+        width: 40%;
+        margin: 10px auto;
+        padding: 10px;
+      }
+      .join_form-email {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px;
+      }
+    }
+    .join_icon {
+      a {
+        i {
+          padding: 7px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+$primary-color: #ffed4c;
+$secondary-color: #000;
+
+#test h1 {
+  text-align: center;
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.question {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.answer {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.answer li {
+  background: $primary-color;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.answer li:hover {
+  background: #000000;
+  color: $primary-color;
+  font-weight: bold;
+}
+
+.answer li:active {
+  background: $secondary-color;
+}
+
+.result {
+  padding: 30px 0;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.result-img {
+  max-width: 600px;
+  display: block;
+  margin: 10px auto;
+}
+
+.reload-button {
+  display: block;
+  margin: 20px auto;
+  background: $primary-color;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 25px;
+  min-width: 200px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.reload-button:hover {
+  background: $secondary-color;
+  color: $primary-color;
+}
