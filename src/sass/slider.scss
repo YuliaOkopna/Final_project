@@ -1,10 +1,12 @@
+.slider-block {
+  padding: 170px 0 30px 0;
+}
+
 .slider {
   max-width: 70%;
   position: relative;
   margin: auto;
   max-height: 300px;
-  margin-bottom: 15px;
-  margin-top: 60px;
   .item img {
     object-fit: cover;
     width: 100%;

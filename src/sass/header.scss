@@ -4,6 +4,8 @@ $secondary-color: #000;
 header {
   background: $primary-color;
   width: 100%;
+  position: fixed;
+  z-index: 10;
 }
 
 .header-main {
